@@ -12,9 +12,13 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				jakarta: ['Plus Jakarta Sans', 'Sans-serif'],
+				clashDisplay: ['Clash Display', 'Sans-serif'],
 			},
 			animation: {
-				'bounce-slow': 'slow-bounce 12s linier infinite',
+				'spin-slow': 'spin 5s linear infinite',
+				'slow-bounce-1': 'bounce 12s linear infinite',
+				'slow-bounce-2': 'bounce 11s linear infinite',
+				'slow-bounce-3': 'bounce 10s linear infinite',
 			},
 		},
 	},

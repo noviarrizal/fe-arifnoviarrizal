@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import ChibiImg from '../img/chibi.webp';
