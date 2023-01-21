@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import '../styles/globals.css';
 import Image from 'next/image';
-import Moana from '../img/moona.webp';
-import Kobo from '../img/kobo.webp';
+import Carousel from './carousel';
 
 export default function Guest() {
 	return (
@@ -27,57 +26,35 @@ export default function Guest() {
 								transitionDuration: '0ms',
 							}}
 						>
-							<div className='swiper-item'>
-								<div className='swiper-slide slide-item relative flex flex-col swiper-slide-next'>
-									<Link href='#'>
-										<Image
-											alt='Mona Hoshiniva'
-											src={Moana}
-											style={{ width: '300px', height: '375px' }}
-											className='aspect-[4/5] w-300 h-375 object-cover pointer-events-none rounded-lg overflow-hidden mr-5'
-										/>
-									</Link>
-									<div className='px-2 py-3 lg:py-4 flex flex-col items-start'>
-										<Link
-											href='#'
-											className='text-white font-clashDisplay text-base lg:text-xl'
-										>
-											Moona Hoshinova
-										</Link>
-									</div>
-									<div className='flex flex-wrap gap-2 mt-2 lg:mt-3'>
-										<span class='px-3 py-1.5 rounded-md text-white font-bold tracking-tight text-xs sm:text-sm bg-indigo-500'>
-											VTuber
-										</span>
-									</div>
-								</div>
-								<div className='swiper-slide slide-item relative flex flex-col'>
-									<Link href='#'>
-										<Image
-											alt='Kobo Image'
-											style={{ width: '300px', height: '375px' }}
-											className='aspect-[4/5] w-300 h-375 object-cover pointer-events-none rounded-lg overflow-hidden mr-5'
-											src={Kobo}
-										/>
-									</Link>
-									<div className='px-2 py-3 lg:py-4 flex flex-col items-start'>
-										<Link
-											href='#'
-											className='text-white font-clashDisplay text-base lg:text-xl'
-										>
-											Kobo Kanaeru
-										</Link>
-									</div>
-									<div className='flex flex-wrap gap-2 mt-2 lg:mt-3'>
-										<span class='px-3 py-1.5 rounded-md text-white font-bold tracking-tight text-xs sm:text-sm bg-indigo-500'>
-											VTuber
-										</span>
-									</div>
-								</div>
-							</div>
 							<div className='swiper-slide slide-px swiper-slide-active'></div>
+							<div className='swiper-item'>
+								<Carousel />
+							</div>
 						</div>
 					</div>
+				</div>
+				<div className='container flex flex-col items-center justify-center mt-6'>
+					<Link
+						href='#'
+						className='px-6 py-5 rounded-full bg-slate-700 hover:bg-slate-600 hover:text-white font-bold tracking-tight transition-colors duration-300 flex items-center gap-x-2 text-white'
+					>
+						<span>View All</span>
+						<svg
+							fill='none'
+							stroke='currentColor'
+							viewBox='0 0 24 24'
+							xmlns='http://www.w3.org/2000/svg'
+							class='h-4'
+							data-v-740c4b20=''
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='2'
+								d='M17 8l4 4m0 0l-4 4m4-4H3'
+							></path>
+						</svg>
+					</Link>
 				</div>
 			</main>
 		</>

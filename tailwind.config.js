@@ -19,6 +19,7 @@ module.exports = {
 				'slow-bounce-1': 'bounce 12s linear infinite',
 				'slow-bounce-2': 'bounce 11s linear infinite',
 				'slow-bounce-3': 'bounce 10s linear infinite',
+				'spin-slowest': 'spin 20s linear infinite',
 			},
 		},
 	},
